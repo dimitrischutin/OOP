@@ -5,6 +5,15 @@ public class ZooPark {
     int amount;
     int cage;
 
+    @Override
+    public String toString() {
+        return "ZooPark{" +
+                "name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                ", amount=" + amount +
+                ", cage=" + cage +
+                '}';
+    }
 
     public ZooPark(String name, String city, int amount, int cage) {
         this.name = name;

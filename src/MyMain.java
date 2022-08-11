@@ -4,15 +4,17 @@ public class MyMain {
 
 
 
-        Animals lion = new Animals("Löwin", 120, 3, Gender.FEMALE);
-        Animals zebra = new Animals("Zebra", 150, 2, Gender.FEMALE);
-        Animals tiger = new Animals("Tiger", 200, 5, Gender.MALE);
+        Animals lion = new Animals(1,"Löwin", 120, 3, Gender.FEMALE);
+        Animals zebra = new Animals(2,"Zebra", 150, 2, Gender.FEMALE);
+        Animals tiger = new Animals(3,"Tiger", 200, 5, Gender.MALE);
 
         ZooPark tierPark = new ZooPark("Hellabrunn", "München",250,100);
-        System.out.println(tierPark.name);
+        /*System.out.println(tierPark.name);
         System.out.println(tierPark.city);
         System.out.println(tierPark.amount);
-        System.out.println(tierPark.cage);
+        System.out.println(tierPark.cage);*/
+        System.out.println(tierPark.toString());
+        System.out.println(zebra.toString());
 
 
 
