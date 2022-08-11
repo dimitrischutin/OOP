@@ -2,29 +2,21 @@ public class MyMain {
 
     public static void main(String[] args) {
 
-        Animals lion = new Animals();
-        Animals zebra = new Animals();
-        Animals tiger = new Animals();
 
-        ZooPark name = new ZooPark();
-        ZooPark city = new ZooPark();
-        ZooPark amount = new ZooPark();
-        ZooPark cage = new ZooPark();
 
-        lion.age = 5;
-        lion.gender = Gender.MALE;
-        lion.name = "Leon";
-        lion.weight = 250.5;
+        Animals lion = new Animals("Löwin", 120, 3, Gender.FEMALE);
+        Animals zebra = new Animals("Zebra", 150, 2, Gender.FEMALE);
+        Animals tiger = new Animals("Tiger", 200, 5, Gender.MALE);
 
-        tiger.age = 8;
-        tiger.gender = Gender.FEMALE;
-        tiger.name = "Tiger";
-        tiger.weight = 200.5;
+        ZooPark tierPark = new ZooPark("Hellabrunn", "München",250,100);
+        System.out.println(tierPark.name);
+        System.out.println(tierPark.city);
+        System.out.println(tierPark.amount);
+        System.out.println(tierPark.cage);
 
-        zebra.age = 3;
-        zebra.gender = Gender.FEMALE;
-        zebra.name = "Zebra";
-        zebra.weight = 280.5;
+
+
+
 
         System.out.println("Animal name: " + lion.name);
         System.out.println("Animal weight: " + lion.weight);
@@ -46,15 +38,7 @@ public class MyMain {
 
         System.out.println("__________________________________________");
 
-        Schoolclass a1 = new Schoolclass();
-        a1.name = "Seelöwe";
-        a1.amount = 25;
-        a1.type = "Math";
 
-
-        System.out.println("Class name: " + a1.name);
-        System.out.println("Class amount: " + a1.amount);
-        System.out.println("Class type: " + a1.type);
 
 
     }
