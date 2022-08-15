@@ -9,11 +9,11 @@ public class Animals {
     @Override
     public String toString() {
         return "Animals{" +
-                "номер животного=" + id +
-                ", name='" + name + '\'' +
-                ", weight=" + weight +
-                ", age=" + age +
-                ", gender=" + gender +
+                "номер животного = " + id +
+                ", name = '" + name + '\'' +
+                ", weight = " + weight +
+                ", age = " + age +
+                ", gender = " + gender +
                 '}';
     }
 
